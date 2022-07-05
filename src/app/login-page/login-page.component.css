@@ -1,0 +1,54 @@
+.background{
+    background: linear-gradient(135deg, #ffe645 0%, #e2aa02 100%);
+    display: flex;
+    width: auto;
+    height: 100vh;
+}
+
+.images{
+    margin: 40px;
+    
+}
+.images img{
+    width: 515px;
+    height: 800px;
+}
+.naslov{
+    position: absolute;
+    top: 40px;
+    right: 46px;
+    font-family:'Creepster', cursive;
+}
+
+.opis{
+    position: absolute;
+    top:140px;
+    text-align: end;
+    padding-right: 51px;
+    font-size: 25px;
+    font-family:'Creepster', cursive;
+}
+
+.login-form{
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-group {
+    margin-top: 10px;
+  }
+.btn-container{
+    margin-top: 15px;
+}
+
+.error-msg{
+    font-size: small;
+    color: red;
+    margin-bottom: 6px;
+
+}

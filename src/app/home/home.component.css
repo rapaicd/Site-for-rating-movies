@@ -1,0 +1,128 @@
+
+
+.ime{
+    display: flex;
+}
+
+.linija{
+    margin-top: 10px;
+    width: 7px;
+    height: 40px;
+    background-color: orange;
+    margin-left: 10px;
+}
+a{
+  cursor: pointer;
+}
+.mark{
+  font-weight: bold;
+}
+.movies{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.movie{
+    padding: 20px;
+    width: 260px;
+    height: 350px;
+}
+
+.movie img{
+    width: 170px;
+    height: 250px;
+    margin-left: 25px;
+}
+
+.movie .name{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 60px;
+} 
+
+.trend{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sve{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    display: inline-flex;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rate{
+    position: absolute;
+    right: 16px;
+}
+
+.drugi-deo{
+    display: inline-flex;
+}
+
+.linija2{
+    height: 824px;
+    width: 1px;
+    background-color: orange;
+}
+
+.lista{
+    margin-top: 30px;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 300px;
+    left: 900px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: rgb(255, 177, 33) transparent rgb(255, 177, 33) transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+  .view-all{
+    cursor: pointer;
+    padding-right: 30px;
+    padding-top: 20px;
+    color: rgb(234, 170, 52);
+  }
+  .ime1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .prvi-deo{
+    width: 1318px;
+  }

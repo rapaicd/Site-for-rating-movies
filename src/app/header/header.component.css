@@ -1,0 +1,25 @@
+.header{
+    background-color: rgb(245, 178, 53);
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    font-family: 'Creepster', cursive;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.btn{
+    margin-right: 20px;
+    margin-top: 16px;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+

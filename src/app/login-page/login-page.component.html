@@ -1,0 +1,45 @@
+<div class="background">
+    <div class="images">
+        <img src="/assets/images/film.png" alt="">
+    </div>
+    <div>
+        <div class="naslov">
+            <h1>Rotten potatos</h1>
+        </div>
+        <div class="opis">
+            <p>Rotten Potatoes is the world’s most trusted recommendation resources for
+                quality entertainment. As the leading online aggregator of movie and TV show
+                reviews from critics, we provide fans with a comprehensive guide to what’s
+                Fresh – and what’s Rotten – in theaters and at home. If you’re an
+                entertainment fan looking for a recommendation, or to share an opinion,
+                you’ve come to the right place.</p>
+        </div>
+        
+        
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input
+            required
+            min="8"
+            class="form-control"
+            type="text"
+            name="uname"
+            [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pass">Password:</label>
+            <input
+            required
+            class="form-control" 
+            type="password" 
+            name="pass"
+            [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error-msg">{{errorMsg}}</div>
+            <button (click)="login()" class="btn btn-dark">Login</button>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<div *ngIf="isLoading" class="lds-hourglass"></div>
+<div *ngIf="isFalse" class="sve">   
+<div class="prvi-deo">
+    <div class="ime1">
+        <div class="ime">
+            <div class="linija"></div>
+            <div class="trend">TRENDING MOVIES</div>
+        </div>
+        <div class="view-all" (click)="TrendingViewAll()" *ngIf="trendingIsView==true">View all</div>
+        <div class="view-all" (click)="TrendingShowLess()" *ngIf="trendingIsView==false">Show less</div>
+    </div>
+    <div class="movies" *ngFor="let i of trendingMovies;let u=index;">
+        <div class="movie" *ngIf="u < trendingNum">
+            <div >
+                <a (click)="goToMovie('trending',i.id)"><img src="{{i.cover}}" alt="">
+                <div class="name">{{i.name}}</div></a>
+                <div class="mark">Rating: {{i.rating}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="ime1">
+        <div class="ime">
+            <div class="linija"></div>
+            <div class="trend">POPULAR IN THEATRES</div>
+        </div>
+        <div class="view-all" (click)="TheatreViewAll()" *ngIf="theatreIsView==true">View all</div>
+        <div class="view-all" (click)="TheatreShowLess()" *ngIf="theatreIsView==false">Show less</div>
+    </div>
+    <div class="movies" *ngFor="let i of theatresMovies;let u=index">
+        <div class="movie" *ngIf="u < theatreNum">
+            <a (click)="goToMovie('theatres',i.id)"><img src="{{i.cover}}" alt="">
+            <div class="name">{{i.name}}</div></a>
+            <div class="mark">{{i.rating}}</div>
+        </div>
+    </div>
+</div>
+<div class="drugi-deo">
+    <div class="linija2"></div>
+    <div>
+        <div class="ime">
+            <div class="linija"></div>
+            <div class="trend">ALL TIME POPULAR</div>
+        </div>
+        <div class="lista">
+            <ul *ngFor="let i of popularMovies">
+                <li><a (click)="goToMovie('popular',i.id)">{{i.name}}</a></li>
+                <li class="rate">{{i.rating}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>

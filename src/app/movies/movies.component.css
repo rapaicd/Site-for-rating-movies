@@ -1,0 +1,164 @@
+
+.prvi{
+    text-align: left;
+    padding-right: 160px;
+    
+}
+img{
+    width: 368px;
+    height: 478px;
+}
+.prvi-deo{
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.prvi h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ime{
+    padding-bottom: 6px;
+}
+
+.ocena{
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+.drugi{
+    display: inline-flex;
+}
+.slika{
+    margin-right: 100px;
+}
+.forma{
+    width: 800px;
+}
+
+.form-control1{
+    border-radius: 7px;
+    width: -webkit-fill-available;
+    height: 100px;
+}
+
+.rate-movie{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.form-group-btn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.form-group-desc{
+    padding-top: 50px;
+}
+.btn.btn-dark{
+    margin-top: 20px;
+}
+.pismo{
+    width:  -webkit-fill-available;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: antiquewhite;
+}
+.line{
+    width: -webkit-fill-available;
+    height: 1px;
+    background-color: rgb(207, 177, 121);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.ime-posetioca{
+    font-weight: bold;
+}
+.poruka{
+    padding-top: 20px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
